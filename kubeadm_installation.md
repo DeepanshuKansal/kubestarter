@@ -48,7 +48,7 @@ sudo apt install kubeadm=1.20.0-00 kubectl=1.20.0-00 kubelet=1.20.0-00 -y
 1. Initialize the Kubernetes master node.
 
     ```bash
-    sudo kubeadm init
+    sudo kubeadm init  --control-plane-endpoint "PUBLIC_IP:PORT"
     ```
     <kbd>![image](https://github.com/paragpallavsingh/kubernetes-kickstarter/assets/40052830/4fed3d68-eb41-423d-b83f-35c3cc11476e)</kbd>
 
